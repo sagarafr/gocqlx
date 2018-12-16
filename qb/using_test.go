@@ -85,8 +85,9 @@ func TestUsing(t *testing.T) {
 			S: "USING TTL 0 ",
 		},
 		{
+			// TODO patch this maybe in the future
 			B: new(using).TTL(-2 * time.Second),
-			S: "USING TTL 0 ",
+			S: "USING TTL -2 ",
 		},
 		// TTL TTLNamed
 		{
